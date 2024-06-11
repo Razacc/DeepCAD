@@ -1,0 +1,199 @@
+{
+ "entities": {
+  "FzddtBuberuvQxN_0": {
+   "reference_plane": {}, 
+   "type": "Sketch", 
+   "name": "Sketch 1", 
+   "profiles": {
+    "JHC": {
+     "loops": [
+      {
+       "profile_curves": [
+        {
+         "start_point": {
+          "y": -0.05226811, 
+          "x": -0.07264236, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHB", 
+         "end_point": {
+          "y": -0.07123036, 
+          "x": -0.09699163, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "start_point": {
+          "y": -0.07123036, 
+          "x": -0.09699163, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHF", 
+         "end_point": {
+          "y": -0.05962441, 
+          "x": -0.12558806, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "start_point": {
+          "y": -0.05962441, 
+          "x": -0.12558806, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHJ", 
+         "end_point": {
+          "y": -0.02905619, 
+          "x": -0.12983523, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "start_point": {
+          "y": -0.02905619, 
+          "x": -0.12983523, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHN", 
+         "end_point": {
+          "y": -0.01009393, 
+          "x": -0.10548596, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "start_point": {
+          "y": -0.01009393, 
+          "x": -0.10548596, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHR", 
+         "end_point": {
+          "y": -0.02169989, 
+          "x": -0.07688952, 
+          "z": 0.0
+         }
+        }, 
+        {
+         "start_point": {
+          "y": -0.05226811, 
+          "x": -0.07264236, 
+          "z": 0.0
+         }, 
+         "type": "Line3D", 
+         "curve": "JHV", 
+         "end_point": {
+          "y": -0.02169989, 
+          "x": -0.07688952, 
+          "z": 0.0
+         }
+        }
+       ], 
+       "is_outer": true
+      }
+     ], 
+     "properties": {}
+    }
+   }, 
+   "transform": {
+    "origin": {
+     "y": 0.0, 
+     "x": 0.0, 
+     "z": 0.0
+    }, 
+    "y_axis": {
+     "y": 0.0, 
+     "x": -0.0, 
+     "z": 1.0
+    }, 
+    "x_axis": {
+     "y": 0.0, 
+     "x": 1.0, 
+     "z": 0.0
+    }, 
+    "z_axis": {
+     "y": -1.0, 
+     "x": 0.0, 
+     "z": 0.0
+    }
+   }
+  }, 
+  "FSd52sFGXJF9pYe_0": {
+   "extent_two": {
+    "distance": {
+     "role": "AgainstDistance", 
+     "type": "ModelParameter", 
+     "name": "none", 
+     "value": 0.0
+    }, 
+    "type": "DistanceExtentDefinition", 
+    "taper_angle": {
+     "role": "Side2TaperAngle", 
+     "type": "ModelParameter", 
+     "name": "none", 
+     "value": 0.0
+    }
+   }, 
+   "name": "Extrude 1", 
+   "extent_one": {
+    "distance": {
+     "role": "AlongDistance", 
+     "type": "ModelParameter", 
+     "name": "none", 
+     "value": 0.025
+    }, 
+    "type": "DistanceExtentDefinition", 
+    "taper_angle": {
+     "role": "TaperAngle", 
+     "type": "ModelParameter", 
+     "name": "none", 
+     "value": 0.0
+    }
+   }, 
+   "extent_type": "OneSideFeatureExtentType", 
+   "operation": "NewBodyFeatureOperation", 
+   "start_extent": {
+    "type": "ProfilePlaneStartDefinition"
+   }, 
+   "type": "ExtrudeFeature", 
+   "profiles": [
+    {
+     "profile": "JHC", 
+     "sketch": "FzddtBuberuvQxN_0"
+    }
+   ]
+  }
+ }, 
+ "properties": {
+  "bounding_box": {
+   "max_point": {
+    "y": 0.0, 
+    "x": -0.0726423589740553, 
+    "z": -0.01009393172409322
+   }, 
+   "type": "BoundingBox3D", 
+   "min_point": {
+    "y": -0.13422, 
+    "x": -0.12983522664140418, 
+    "z": -0.0712303649469072
+   }
+  }
+ }, 
+ "sequence": [
+  {
+   "index": 0, 
+   "type": "Sketch", 
+   "entity": "FzddtBuberuvQxN_0"
+  }, 
+  {
+   "index": 1, 
+   "type": "ExtrudeFeature", 
+   "entity": "FSd52sFGXJF9pYe_0"
+  }
+ ]
+}

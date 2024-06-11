@@ -1,0 +1,218 @@
+{
+ "entities": {
+  "FAB4C2Ehi2rvwcr_0": {
+   "reference_plane": {},
+   "type": "Sketch",
+   "name": "Sketch 1",
+   "profiles": {
+    "JGC": {
+     "loops": [
+      {
+       "profile_curves": [
+        {
+         "center_point": {
+          "y": 0.0,
+          "x": 0.0,
+          "z": 0.0
+         },
+         "radius": 0.01,
+         "type": "Circle3D",
+         "curve": "JGF+JGB",
+         "normal": {
+          "y": 0.0,
+          "x": 0.0,
+          "z": 1.0
+         }
+        }
+       ],
+       "is_outer": true
+      }
+     ],
+     "properties": {}
+    },
+    "JGG": {
+     "loops": [
+      {
+       "profile_curves": [
+        {
+         "center_point": {
+          "y": 0.0,
+          "x": 0.0,
+          "z": 0.0
+         },
+         "start_angle": 0.0,
+         "radius": 0.01,
+         "end_point": {
+          "y": 0.00988686,
+          "x": 0.0015,
+          "z": 0.0
+         },
+         "start_point": {
+          "y": 0.00988686,
+          "x": -0.0015,
+          "z": 0.0
+         },
+         "normal": {
+          "y": 0.0,
+          "x": 0.0,
+          "z": 1.0
+         },
+         "type": "Arc3D",
+         "curve": "JGB",
+         "end_angle": 0.30113654455265015,
+         "reference_vector": {
+          "y": 0.9886859967393136,
+          "x": 0.1499999995053,
+          "z": 0.0
+         }
+        },
+        {
+         "start_point": {
+          "y": 0.01388686,
+          "x": 0.0015,
+          "z": 0.0
+         },
+         "type": "Line3D",
+         "curve": "JGR",
+         "end_point": {
+          "y": 0.00988686,
+          "x": 0.0015,
+          "z": 0.0
+         }
+        },
+        {
+         "start_point": {
+          "y": 0.01388686,
+          "x": -0.0015,
+          "z": 0.0
+         },
+         "type": "Line3D",
+         "curve": "JGJ",
+         "end_point": {
+          "y": 0.01388686,
+          "x": 0.0015,
+          "z": 0.0
+         }
+        },
+        {
+         "start_point": {
+          "y": 0.01388686,
+          "x": -0.0015,
+          "z": 0.0
+         },
+         "type": "Line3D",
+         "curve": "JGN",
+         "end_point": {
+          "y": 0.00988686,
+          "x": -0.0015,
+          "z": 0.0
+         }
+        }
+       ],
+       "is_outer": true
+      }
+     ],
+     "properties": {}
+    }
+   },
+   "transform": {
+    "origin": {
+     "y": 0.0,
+     "x": 0.0,
+     "z": 0.0
+    },
+    "y_axis": {
+     "y": 1.0,
+     "x": 0.0,
+     "z": 0.0
+    },
+    "x_axis": {
+     "y": 0.0,
+     "x": 1.0,
+     "z": 0.0
+    },
+    "z_axis": {
+     "y": 0.0,
+     "x": 0.0,
+     "z": 1.0
+    }
+   }
+  },
+  "FLWLZDMaTBbCqRg_0": {
+   "extent_two": {
+    "distance": {
+     "role": "AgainstDistance",
+     "type": "ModelParameter",
+     "name": "none",
+     "value": 0.0
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "role": "Side2TaperAngle",
+     "type": "ModelParameter",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "name": "Extrude 1",
+   "extent_one": {
+    "distance": {
+     "role": "AlongDistance",
+     "type": "ModelParameter",
+     "name": "none",
+     "value": 0.06
+    },
+    "type": "DistanceExtentDefinition",
+    "taper_angle": {
+     "role": "TaperAngle",
+     "type": "ModelParameter",
+     "name": "none",
+     "value": 0.0
+    }
+   },
+   "extent_type": "OneSideFeatureExtentType",
+   "operation": "NewBodyFeatureOperation",
+   "start_extent": {
+    "type": "ProfilePlaneStartDefinition"
+   },
+   "type": "ExtrudeFeature",
+   "profiles": [
+    {
+     "profile": "JGC",
+     "sketch": "FAB4C2Ehi2rvwcr_0"
+    },
+    {
+     "profile": "JGG",
+     "sketch": "FAB4C2Ehi2rvwcr_0"
+    }
+   ]
+  }
+ },
+ "properties": {
+  "bounding_box": {
+   "max_point": {
+    "y": 0.013886859966642595,
+    "x": 0.01,
+    "z": 0.06
+   },
+   "type": "BoundingBox3D",
+   "min_point": {
+    "y": -0.01,
+    "x": -0.01,
+    "z": 0.0
+   }
+  }
+ },
+ "sequence": [
+  {
+   "index": 0,
+   "type": "Sketch",
+   "entity": "FAB4C2Ehi2rvwcr_0"
+  },
+  {
+   "index": 1,
+   "type": "ExtrudeFeature",
+   "entity": "FLWLZDMaTBbCqRg_0"
+  }
+ ]
+}

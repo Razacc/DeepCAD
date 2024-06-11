@@ -1,0 +1,126 @@
+{
+ "entities": {
+  "RevolveFeature1": {
+   "name": "Revolve 1",
+   "type": "RevolveFeature",
+   "profiles": [
+    {
+     "profile": "Profile1",
+     "sketch": "Sketch1"
+    }
+   ],
+   "axis": {
+    "start_point": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "end_point": {
+     "x": 0.0,
+     "y": 1.0,
+     "z": 0.0
+    }
+   },
+   "angle": {
+    "type": "ModelParameter",
+    "role": "Angle",
+    "name": "none",
+    "value": 360.0
+   },
+   "operation": "NewBodyFeatureOperation"
+  },
+  "Sketch1": {
+   "transform": {
+    "origin": {
+     "y": 0.0,
+     "x": 0.0,
+     "z": 0.0
+    },
+    "y_axis": {
+     "y": 1.0,
+     "x": 0.0,
+     "z": 0.0
+    },
+    "x_axis": {
+     "y": 0.0,
+     "x": 1.0,
+     "z": 0.0
+    },
+    "z_axis": {
+     "y": 0.0,
+     "x": 0.0,
+     "z": 1.0
+    }
+   },
+   "type": "Sketch",
+   "name": "Sketch 1",
+   "profiles": {
+    "Profile1": {
+     "loops": [
+      {
+       "is_outer": true,
+       "profile_curves": [
+        {
+         "start_point": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+         },
+         "end_point": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.0
+         },
+         "type": "Line3D"
+        },
+        {
+         "start_point": {
+          "x": 0.05,
+          "y": 0.05,
+          "z": 0.0
+         },
+         "end_point": {
+          "x": 0.0,
+          "y": 0.05,
+          "z": 0.0
+         },
+         "type": "Line3D"
+        }
+       ]
+      }
+     ],
+     "properties": {}
+    }
+   },
+   "reference_plane": {}
+  }
+ },
+ "properties": {
+  "bounding_box": {
+   "max_point": {
+    "y": 0.05,
+    "x": 0.05,
+    "z": 0.05
+   },
+   "type": "BoundingBox3D",
+   "min_point": {
+    "y": 0.0,
+    "x": 0.0,
+    "z": 0.0
+   }
+  }
+ },
+ "sequence": [
+  {
+   "index": 0,
+   "type": "Sketch",
+   "entity": "Sketch1"
+  },
+  {
+   "index": 1,
+   "type": "RevolveFeature",
+   "entity": "RevolveFeature1"
+  }
+ ]
+}
+

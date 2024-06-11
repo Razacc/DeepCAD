@@ -42,7 +42,7 @@ def normalize_pc(points):
 
 def process_one(path):
     with h5py.File(path, 'r') as fp:
-        out_vec = fp["out_vec"][:].astype(np.float)
+        out_vec = fp["out_vec"][:].astype(float)
         # gt_vec = fp["gt_vec"][:].astype(np.float)
 
     data_id = path.split('/')[-1].split('.')[0][:8]
@@ -76,6 +76,8 @@ def process_one(path):
 
 def run(args):
     filepaths = sorted(glob.glob(os.path.join(args.src, "*.h5")))
+    # filepaths = ["/home/tpethe/DeepCADorigin/proj_log/pretrained/results/test_1000/00000093_vec.h5"]
+    
     if args.num != -1:
         filepaths = filepaths[:args.num]
 

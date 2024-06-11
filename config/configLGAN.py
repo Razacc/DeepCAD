@@ -66,7 +66,7 @@ class ConfigLGAN(object):
                             help="gpu to use, e.g. 0  0,1,2. CPU not supported.")
 
         parser.add_argument('--batch_size', type=int, default=256, help="batch size")
-        parser.add_argument('--num_workers', type=int, default=8, help="number of workers for data loading")
+        parser.add_argument('--num_workers', type=int, default=0, help="number of workers for data loading")
 
         parser.add_argument('--n_iters', type=int, default=200000, help="total number of iterations to train")
         parser.add_argument('--save_frequency', type=int, default=100000, help="save models every x iterations")

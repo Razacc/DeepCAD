@@ -81,10 +81,10 @@ class ConfigAE(object):
         parser.add_argument('--exp_name', type=str, default=os.getcwd().split('/')[-1], help="name of this experiment")
         parser.add_argument('-g', '--gpu_ids', type=str, default='0', help="gpu to use, e.g. 0  0,1,2. CPU not supported.")
 
-        parser.add_argument('--batch_size', type=int, default=512, help="batch size")
-        parser.add_argument('--num_workers', type=int, default=8, help="number of workers for data loading")
+        parser.add_argument('--batch_size', type=int, default=32, help="batch size")
+        parser.add_argument('--num_workers', type=int, default=0, help="number of workers for data loading")
 
-        parser.add_argument('--nr_epochs', type=int, default=1000, help="total number of epochs to train")
+        parser.add_argument('--nr_epochs', type=int, default=3, help="total number of epochs to train")
         parser.add_argument('--lr', type=float, default=1e-3, help="initial learning rate")
         parser.add_argument('--grad_clip', type=float, default=1.0, help="initial learning rate")
         parser.add_argument('--warmup_step', type=int, default=2000, help="step size for learning rate warm up")
